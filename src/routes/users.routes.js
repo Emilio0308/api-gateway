@@ -37,26 +37,4 @@ router.use('/getContacts', userProxy);
 
 module.exports = router;
 
-//ejemplo de ruta
-// {
-//   url: '/pokemon/:id',
-//   auth: false,
-//   creditCheck: false,
-//   rateLimit: {
-//     windowMs: 1 * 60 * 1000,
-//     max: 5,
-//   },
-//   proxy: {
-//     target: 'https://pokeapi.co/api/v2/pokemon/',
-//     changeOrigin: true,
-//     pathRewrite: {
-//       [`^/pokemon`]: '',
-//     },
-//   },
-//   nProxyReq: (proxyReq, req, res) => {
-//     const { id } = req.params;
-//     if (id) {
-//       proxyReq.path = `${id}`;
-//     }
-//   },
-// },
+
